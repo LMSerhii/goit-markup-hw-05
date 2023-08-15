@@ -594,8 +594,14 @@
         <div class="footer-form-wrapp">
           <p class="footer-form-header">Subscribe</p>
           <form action="" class="footer-form">
-            <input type="email" class="footer-form-input" name="footer-email" placeholder="E-mail">
-            <button class="footer-btn">Subscribe
+            <input
+              type="email"
+              class="footer-form-input"
+              name="footer-email"
+              placeholder="E-mail"
+            />
+            <button class="footer-btn">
+              Subscribe
               <svg class="footer-btn-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
@@ -608,11 +614,62 @@
     <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" type="button" data-modal-close>
+        <button class="modal-btn-close" type="button" data-modal-close>
           <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#modal-close"></use>
           </svg>
         </button>
+        <p class="modal-header">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form">
+          <label class="modal-form-label">
+            Name
+            <input
+              class="modal-form-input"
+              type="text"
+              name="name"
+              placeholder=""
+            />
+          </label>
+          <label class="modal-form-label">
+            Phone
+            <input
+              class="modal-form-input"
+              type="tel"
+              name="phone"
+              placeholder=""
+            />
+          </label>
+          <label class="modal-form-label">
+            Email
+            <input
+              class="modal-form-input"
+              type="email"
+              name="email"
+              placeholder=""
+            />
+          </label>
+          <label class="modal-form-label">
+            Comment
+            <input
+              class="modal-form-input"
+              type="textarea"
+              name="textarea"
+              placeholder="Text input"
+            />
+          </label>
+          <input
+            class="modal-checkbox"
+            type="checkbox"
+            id="privacy-policy"
+            name="privacy-policy"
+          />
+          <label for="#privacy-policy">
+            I accept the terms and conditions of the Privacy Policy
+          </label>
+          <button class="modal-btn-send" type="submit">Send</button>
+        </form>
       </div>
     </div>
 

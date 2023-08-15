@@ -692,14 +692,14 @@ button {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.5; 
+  line-height: 1.5;
   letter-spacing: 0.04em;
 
   border-radius: 4px;
   background-color: var(--pressed-state-color);
   border: none;
 
-  transition: background-color var(--animation)
+  transition: background-color var(--animation);
 }
 
 .footer-btn:hover,
@@ -708,7 +708,7 @@ button {
 }
 
 .footer-btn-icon {
-  fill: var(--white-background-color)
+  fill: var(--white-background-color);
 }
 
 /*
@@ -757,7 +757,7 @@ button {
   transform: translate(-50%, -50%) scale(1);
 }
 
-.modal-btn {
+.modal-btn-close {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -791,4 +791,20 @@ button {
 .modal-btn:hover .modal-btn-icon,
 .modal-btn:focus .modal-btn-icon {
   fill: #ffffff;
+
+  .modal-header {
+  }
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .modal-form-label {
+  }
+  .modal-form-input {
+  }
+  .modal-checkbox {
+  }
+  .modal-btn-send {
+  }
 }
