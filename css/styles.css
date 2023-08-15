@@ -618,6 +618,7 @@ button {
 }
 
 .footer-social-media {
+  margin-right: 80px;
 }
 
 .footer-social-media-header {
@@ -660,6 +661,54 @@ button {
 
 .footer-social-media-icons {
   fill: var(--ligh-color);
+}
+
+.footer-form-wrapp {
+}
+.footer-form-header {
+  color: var(--white-background-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 16px;
+}
+.footer-form {
+}
+.footer-form-input {
+  margin-right: 24px;
+}
+.footer-btn {
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  color: var(--white-background-color);
+  text-align: center;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; 
+  letter-spacing: 0.04em;
+
+  border-radius: 4px;
+  background-color: var(--pressed-state-color);
+  border: none;
+
+  transition: background-color var(--animation)
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: var(--primary-brand-color);
+}
+
+.footer-btn-icon {
+  fill: var(--white-background-color)
 }
 
 /*
@@ -706,7 +755,6 @@ button {
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1);
-  
 }
 
 .modal-btn {
