@@ -593,7 +593,7 @@
         </div>
         <div class="footer-form-wrapp">
           <p class="footer-form-header">Subscribe</p>
-          <form action="" class="footer-form">
+          <form class="footer-form">
             <input
               type="email"
               class="footer-form-input"
@@ -614,15 +614,20 @@
     <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <!-- Modal button close -->
         <button class="modal-btn-close" type="button" data-modal-close>
           <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#modal-close"></use>
           </svg>
         </button>
-        <p class="modal-header">
-          Leave your contacts and we will call you back
-        </p>
+
+        <!-- Modal form  -->
         <form class="modal-form">
+          <!-- Modal header -->
+          <p class="modal-header">
+            Leave your contacts and we will call you back
+          </p>
+
           <label class="modal-form-label">
             Name
             <input
@@ -630,6 +635,7 @@
               type="text"
               name="name"
               placeholder=""
+              autofocus
             />
           </label>
           <label class="modal-form-label">
@@ -652,21 +658,24 @@
           </label>
           <label class="modal-form-label">
             Comment
-            <input
+            <textarea
               class="modal-form-input"
-              type="textarea"
-              name="textarea"
+              name="comment"
               placeholder="Text input"
-            />
+              rows="5"
+            >
+            </textarea>
           </label>
-          <input
-            class="modal-checkbox"
-            type="checkbox"
-            id="privacy-policy"
-            name="privacy-policy"
-          />
-          <label for="#privacy-policy">
-            I accept the terms and conditions of the Privacy Policy
+
+          <label class="modal-pp-label">
+            <input
+              class="modal-pp-input"
+              type="checkbox"
+              id="privacy-policy"
+              name="privacy-policy"
+            />
+            I accept the terms and conditions of the
+            <a href="" class="modla-pp-link link">Privacy Policy</a>
           </label>
           <button class="modal-btn-send" type="submit">Send</button>
         </form>
