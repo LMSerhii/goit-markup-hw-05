@@ -739,7 +739,7 @@ button {
 }
 
 .footer-btn-icon {
-  margin-left: 16px; 
+  margin-left: 16px;
   fill: var(--white-background-color);
 }
 
@@ -868,10 +868,10 @@ button {
   padding: 8px 16px 8px 38px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  background-color: transparent; 
+  background-color: transparent;
   outline: transparent;
 
-  transition: border-color var(--animation), fill var(--animation);
+  transition: border-color var(--animation);
 }
 
 .modal-form-input:focus {
@@ -885,10 +885,15 @@ button {
   top: 50%;
 
   transform: translateY(-50%);
+  transition: fill var(--animation);
 }
 
 .modal-form-input:focus + .modal-form-input-icon {
   fill: var(--pressed-state-color);
+}
+
+.comment-box {
+  margin-bottom: 16px;
 }
 
 .modal-textarea {
@@ -897,19 +902,24 @@ button {
   resize: none;
 
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
-
-  margin-bottom: 16px;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-textarea::placeholder {
   color: rgba(46, 47, 66, 0.4);
 }
 
+/* modal checkbox */
+
+.checkbox-wrapper {
+  margin-bottom: 24px;  
+}
+
 .modal-form-agrement {
   display: inline-block;
-  margin-bottom: 24px;
+
 }
 
 .modal-form-check {
@@ -925,15 +935,16 @@ button {
   color: transparent;
 
   border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.40);
+  border: 1px solid rgba(46, 47, 66, 0.4);
 
-  transition: background-color var(--animation), border-color var(--animation), color var(--animation) 
+  transition: background-color var(--animation), border-color var(--animation),
+    color var(--animation);
 }
 
-input[type="checkbox"]:checked + .modal-form-check {
+input[type='checkbox']:checked + .modal-form-check {
   background-color: var(--primary-brand-color);
   border-color: transparent;
-  color: var(--ligh-color)
+  color: var(--ligh-color);
 }
 
 .modal-form-check-icon {

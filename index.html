@@ -687,39 +687,47 @@
           </div>
 
           <!-- modal textarea comment -->
-          <label class="modal-form-label" for="modal-comment">Comment</label>
-          <textarea
-            class="modal-form-input modal-textarea"
-            name="user-comment"
-            id="user-comment"
-            placeholder="Text input"
-            rows="8"
-          ></textarea>
+          <div class="comment-box">
+            <label class="modal-form-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-form-input modal-textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+              rows="8"
+            ></textarea>
+          </div>
 
           <!-- modal chekbox  privacy-->
-          <label class="modal-form-agrement">
-            <input
-              class="visually-hidden"
-              type="checkbox"
-              name="privacy-policy"
-            />
-            <span class="modal-form-check">
-              <svg class="modal-form-check-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg>
-            </span>
-            <span class="modal-form-desc">
-              I accept the terms and conditions of the
-              <a
-                class="modal-agrement-link link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Privacy Policy
-              </a>
-            </span>
-          </label>
+          <div class="checkbox-wrapper">  
+            <label class="modal-form-agrement">
+              <input
+                class="visually-hidden"
+                type="checkbox"
+                name="user-privacy"
+                id="user-privacy"
+                value="true"
+              />
+
+              
+              <span class="modal-form-check">
+                <svg class="modal-form-check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              <span class="modal-form-desc">
+                I accept the terms and conditions of the
+                <a
+                  class="modal-agrement-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Privacy Policy
+                </a>
+              </span>
+            </label>
+          </div>
           <!-- modal form button -->
           <button class="modal-btn-send" type="submit">Send</button>
         </form>
