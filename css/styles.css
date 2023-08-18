@@ -922,7 +922,7 @@ button {
 
   color: var(--subtle-text-color);
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
 
   user-select: none;
@@ -938,24 +938,21 @@ button {
 
   margin-right: 8px;
 
-  color: transparent;
+  fill: transparent;
 
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
 
-  transition: background-color var(--animation), border-color var(--animation),
-    color var(--animation);
+  transition: background-color var(--animation), border var(--animation),
+    fill var(--animation);
 }
 
 input[type='checkbox']:checked + .modal-form-agrement .modal-form-check {
   background-color: var(--primary-brand-color);
-  border-color: transparent;
-  color: var(--ligh-color);
+  border: border;
+  fill: var(--ligh-color);
 }
 
-.modal-form-check-icon {
-  fill: currentColor;
-}
 
 .modal-agrement-link {
   color: var(--iris, #4d5ae5);
