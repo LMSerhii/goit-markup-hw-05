@@ -949,7 +949,7 @@ button {
 
 input[type='checkbox']:checked + .modal-form-agrement .modal-form-check {
   background-color: var(--primary-brand-color);
-  border: border;
+  border: none;
   fill: var(--ligh-color);
 }
 
