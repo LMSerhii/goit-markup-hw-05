@@ -914,12 +914,18 @@ button {
 /* modal checkbox */
 
 .checkbox-wrapper {
-  margin-bottom: 24px;  
+  margin-bottom: 24px;
 }
 
 .modal-form-agrement {
-  display: inline-block;
+  display: block;
 
+  color: var(--subtle-text-color);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+
+  user-select: none;
 }
 
 .modal-form-check {
@@ -941,7 +947,7 @@ button {
     color var(--animation);
 }
 
-input[type='checkbox']:checked + .modal-form-check {
+input[type='checkbox']:checked + .modal-form-agrement .modal-form-check {
   background-color: var(--primary-brand-color);
   border-color: transparent;
   color: var(--ligh-color);
@@ -949,15 +955,6 @@ input[type='checkbox']:checked + .modal-form-check {
 
 .modal-form-check-icon {
   fill: currentColor;
-}
-
-.modal-form-desc {
-  color: var(--subtle-text-color);
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.04em;
-
-  user-select: none;
 }
 
 .modal-agrement-link {
@@ -972,7 +969,7 @@ input[type='checkbox']:checked + .modal-form-check {
   display: block;
   margin: 0 auto;
 
-  width: 169px;
+  min-width: 169px;
   align-self: center;
 
   padding: 16px 32px;
