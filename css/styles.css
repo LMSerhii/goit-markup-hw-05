@@ -680,17 +680,26 @@ button {
   gap: 24px;
 }
 .footer-form-input {
-  min-width: 264px;
+  width: 264px;
+  height: 40px;
   padding: 8px 16px;
+
+  outline: none;
 
   background-color: transparent;
   color: var(--white-background-color);
   border-radius: 4px;
   border: 1px solid var(--white-background-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
-  /* transition: border-color var(--animation); */
 }
+
+.footer-form-input::placeholder {
+  color: var(--white-background-color);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
 .footer-btn {
   display: inline-flex;
   padding: 8px 24px;
@@ -702,7 +711,6 @@ button {
   text-align: center;
 
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -756,6 +764,7 @@ button {
 
   width: 408px;
   min-height: 584px;
+  padding: 72px 24px 24px 24px;
 
   border-radius: 4px;
   background: var(--modal-background-color);
@@ -820,8 +829,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 8px;
-
-  padding: 72px 24px 24px 24px;
 }
 
 .modal-form-label {
@@ -836,22 +843,29 @@ button {
   letter-spacing: 0.04em;
 }
 
+.modal-form-input-wrapper {
+  position: relative;
+}
+
 .modal-form-input {
+  width: 360px;
+  height: 40px;
+  
   padding: 8px 16px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+
+  outline: none;
 }
 
-.modal-form-input:focus-within {
-  border-color: var(--pressed-state-color);
+.modal-form-input-icon {
+  position: absolute;
+  left: 16px;
+  top: 8px;
 }
 
-.modal-form-input::placeholder {
-  color: rgba(46, 47, 66, 0.4);
-
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.04em;
+.modal_textarea {
+  height: 120px;
 }
 
 .modal-pp-label {
@@ -868,7 +882,7 @@ button {
   margin-bottom: 24px;
 }
 
-.modla-pp-link {
+.modal-pp-link {
   color: var(--pressed-state-color);
 
   font-size: 12px;
